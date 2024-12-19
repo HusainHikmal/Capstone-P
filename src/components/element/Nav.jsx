@@ -57,7 +57,7 @@ export const Nav = () => {
         {/* Search & Save Button */}
         <div className="flex items-center space-x-3">
           {/* Search Form for Desktop  */}
-          <form className="hidden md:flex" onSubmit={handleSearch}>
+          <form className="hidden lg:flex" onSubmit={handleSearch}>
             <input
               className="px-3 py-2 w-48 lg:w-64 rounded-l-md text-neutral-800 font-mono border border-gray-300 focus:outline-none focus:ring focus:ring-blue-300"
               type="text"
