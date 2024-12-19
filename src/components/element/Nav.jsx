@@ -25,9 +25,9 @@ export const Nav = () => {
 
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
-        <a href="/">
+        <NavLink to="/">
           <img src="/src/assets/newspaper.png" alt="Logo" className="w-10 h-10" />
-        </a>
+        </NavLink>
         <div className="font-playfair text-2xl font-bold">
           <NavLink to="/">News App</NavLink>
         </div>
