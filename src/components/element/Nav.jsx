@@ -26,7 +26,7 @@ export const Nav = () => {
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <NavLink to="/">
-          <img src="/src/assets/newspaper.png" alt="Logo" className="w-10 h-10" />
+          <img src="https://cdn-icons-png.flaticon.com/512/7108/7108096.png" alt="Logo" className="w-11 h-11" />
         </NavLink>
         <div className="font-playfair text-2xl font-bold">
           <NavLink to="/">News App</NavLink>
