@@ -37,9 +37,7 @@ export const Nav = () => {
           <NavLink to="/" className="hover:text-gray-400">
             Home
           </NavLink>
-          <NavLink to="/category/cnn&bbc" className="hover:text-gray-400">
-            CNN
-          </NavLink>
+        
           <NavLink to="/category/sports" className="hover:text-gray-400">
             Sports
           </NavLink>
@@ -49,9 +47,7 @@ export const Nav = () => {
           <NavLink to="/category/makanan" className="hover:text-gray-400">
             Makanan
           </NavLink>
-          <NavLink to="/category/programming" className="hover:text-gray-400">
-            Programming
-          </NavLink>
+       
         </div>
 
         {/* Search & Save Button */}
@@ -114,13 +110,7 @@ export const Nav = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/category/cnn&bbc"
-            onClick={handleLinkClick}
-            className="block text-white hover:bg-gray-600 px-4 py-2 rounded"
-          >
-            CNN
-          </NavLink>
+     
           <NavLink
             to="/category/sports"
             onClick={handleLinkClick}
@@ -142,13 +132,7 @@ export const Nav = () => {
           >
             Makanan
           </NavLink>
-          <NavLink
-            to="/category/programming"
-            onClick={handleLinkClick}
-            className="block text-white hover:bg-gray-600 px-4 py-2 rounded"
-          >
-            Programming
-          </NavLink>
+       
 
           {/* Search Form for Mobile */}
           <form className="flex mt-4" onSubmit={handleSearch}>

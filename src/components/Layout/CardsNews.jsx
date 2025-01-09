@@ -10,10 +10,10 @@ import { ADD_NEWS, REMOVE_NEWS } from "../../redux/BookmarkSlice";
 const API_KEY = import.meta.env.VITE_ApiKey;
 const BASE_URL = import.meta.env.VITE_Default_News;
 
-const SOURCES = `${BASE_URL}${API_KEY}${import.meta.env.VITE_SOURCES}`;
+// const SOURCES = `${BASE_URL}${API_KEY}${import.meta.env.VITE_SOURCES}`;
 const SPORTS = `${BASE_URL}${API_KEY}${import.meta.env.VITE_SPORT}`;
 const HEALTY = `${BASE_URL}${API_KEY}${import.meta.env.VITE_HEALTY}`;
-const TECHNOLOGY = `${BASE_URL}${API_KEY}${import.meta.env.VITE_SEARCH}`;
+// const TECHNOLOGY = `${BASE_URL}${API_KEY}${import.meta.env.VITE_SEARCH}`;
 const FOOD = `${BASE_URL}${API_KEY}${import.meta.env.VITE_FOOD}`;
 
 
@@ -59,17 +59,21 @@ const CardsNews = () => {
     let url;
     if (search) {
       url = `${BASE_URL}${API_KEY}&keywords=${search}`;
-    } else if (category === "cnn&bbc") {
-      url = SOURCES;
-    } else if (category === "sports") {
+    } 
+    // else if (category === "cnn&bbc") {
+    //   url = SOURCES;
+    // } 
+    else if (category === "sports") {
       url = SPORTS;
     } else if (category === "makanan") {
       url = FOOD;
     } else if(category === 'kesehatan'){
       url = HEALTY
-    }else if (category === "programming") {
-      url = TECHNOLOGY;
-    } else {
+    }
+    // else if (category === "programming") {
+    //   url = TECHNOLOGY;
+    // } 
+    else {
       url = `${BASE_URL}${API_KEY}&countries=id`;
     }
     setIsLoading(true);
