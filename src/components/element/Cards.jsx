@@ -41,7 +41,7 @@ const Cards = (props) => {
             onClick={onClick1}
           >
             <span className="absolute inset-0 bg-gradient-to-tl from-gray-50 to-transparent opacity-20 rounded-full pointer-events-none"></span>
-            Read More...
+            See
           </button>
 
           {/* Save Icon */}
